@@ -1,0 +1,34 @@
+@use "../abstracts/extend" as *;
+@use "../abstracts/variables" as *;
+
+
+.contact{
+    width: 70%;
+    @extend %center-item;
+    flex-direction: column;
+    margin: 0 auto;
+    h1{
+        color: $maintextcolor;
+        font: 200px;
+        font-family: $head-font;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    i{
+        font-size: 38px;
+        margin-bottom: 25px;
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 50px;
+        input{
+            padding: 25px 200px;
+            border: none;
+            text-decoration: underline gray;
+        }
+    }
+}
